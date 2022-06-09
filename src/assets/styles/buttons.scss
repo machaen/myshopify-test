@@ -1,0 +1,28 @@
+@import "./variables.scss";
+
+button,a{
+    &.btn{
+        display: flex;
+        line-height: 50px;
+        height: 50px;
+        box-sizing: border-box;
+        border-radius: 26px;
+        padding: 0px 40px 0px 30px;
+        font-size: 13px;
+        background-color: transparent;
+        letter-spacing: 1px;
+        &.btn-light{
+            border: 1px solid $white;
+            color: $white;
+        }
+        &.btn-dark{
+            border: 1px solid $grey-dark;
+            color: $grey-dark;
+        }
+    }
+}
+
+@keyframes a1 {
+    90%,100%{flex-grow: 1}
+  }
+  

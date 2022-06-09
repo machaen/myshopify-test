@@ -1,0 +1,35 @@
+/* 
+  Variables
+*/
+@import "./variables.scss";
+@import "./fonts.scss";
+@import "./utils.scss";
+/* 
+General styles
+*/
+
+body {
+  margin: 0px;
+  background-color: $white;
+  font-size: 1em;
+  font-family: 'HelveticaNeue';
+}
+ul,
+p {
+  margin: 0px;
+}
+img{
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+  color: $text-grey;
+}
+
+/* 
+
+*/
+.container{
+  max-width: 1440px;
+  margin: 0px auto;
+}

@@ -1,0 +1,25 @@
+@import "./variables.scss";
+
+.slider-one-home{
+    position: relative;
+    .content{
+        position: absolute;
+        top: 225px;
+        left: 173px;
+        width: 709px;
+        height: 257px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p{
+            /* font-size: 3.7rem; */
+            font-size: 53px;
+            color: $white;
+            margin-bottom: 35px;
+            strong{
+                font-weight: bold;
+                color: $lemon-green;
+            }
+        }
+    }
+}
