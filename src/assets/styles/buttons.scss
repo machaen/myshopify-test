@@ -1,32 +1,72 @@
 @import "./variables.scss";
-
+// Settings
+$arrow-color: #e74c3c;
+$arrow-size: 7px;
+$arrow-border: 2px;
 button,
 a {
   &.btn {
     display: flex;
     line-height: 50px;
     height: 50px;
-    box-sizing: border-box;
     border-radius: 26px;
-    padding: 0px 40px 0px 30px;
+    padding: 0px 80px 0px 30px;
     font-size: 13px;
     background-color: transparent;
     letter-spacing: 1px;
-    min-width: 234px;
+    width: max-content;
+    position: relative;
     &.btn-light {
       border: 1px solid $white;
       color: $white;
+      &:after {
+        background-color: $white;
+      }
+      &:before {
+        box-shadow: inset -#{$arrow-border} $arrow-border 0 0 $white;
+      }
     }
     &.btn-dark {
       border: 1px solid $grey-dark;
       color: $grey-dark;
+      &:after {
+        background-color: $grey-dark;
+      }
+      &:before {
+        box-shadow: inset -#{$arrow-border} $arrow-border 0 0 $grey-dark;
+      }
     }
-  }
-}
+    &:after,
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      transition: all 0.5s ease-in-out;
+    }
+    &:before {
+      top: 50%;
+      right: 30px;
+      width: $arrow-size;
+      height: $arrow-size;
+      transform-origin: 50% 50%;
+      transform: translate(0, -($arrow-size / 2)) rotate(45deg);
+      border-radius: 0 $arrow-size * 0.15 0 0;
+    }
 
-@keyframes a1 {
-  90%,
-  100% {
-    flex-grow: 1;
+    &:after {
+      top: 50%;
+      right: 30px;
+      width: $arrow-size * 4;
+      height: $arrow-border;
+      transform: translate(0, -($arrow-border / 2));
+    }
+    &:hover {
+      &:before {
+        transform: translate(0.5em, -($arrow-size / 2)) rotate(45deg);
+      }
+      &:after {
+        transform: translate(0.5em, -($arrow-border / 2));
+      }
+    }
   }
 }

@@ -5,14 +5,14 @@
   width: 100%;
   justify-content: center;
   background-color: $grey;
-  padding-top: 70px;
-  padding-bottom: 67px;
+  padding-top: clamp(30px, 5.2vw, 70px);
+  padding-bottom: clamp(30px, 5.2vw, 67px);
   gap: 50px;
   > div {
     display: flex;
     &:nth-child(1) {
       span {
-        margin-top: 30px;
+        margin-top: clamp(0px, 6.333vw, 30px);
         color: $lemon-green;
         font-size: 15px;
         font-weight: 500;
@@ -22,7 +22,7 @@
       width: clamp(320px, 38%, 100%);
       flex-direction: column;
       h2 {
-        font-size: 50px;
+        font-size: clamp(2rem, -0.875rem + 6.333vw, 50px);
         margin-bottom: 20px;
         line-height: 1.4;
         font-weight: normal;
@@ -43,27 +43,78 @@
 .prefooter {
   background: url(../images/prefooter.jpg) center center;
   background-size: cover;
-  height: 586px;
+  height: clamp(250px, 33vw, 586px);
   width: 100%;
 }
 footer.footer {
-  height: 203px;
-  width: 100%;
+  max-width: 100%;
   background-color: $lemon-green;
   display: flex;
-  align-content: center;
-  .menu-footer {
+  justify-content: space-between;
+  padding: 65px 63px 58px 78px;
+  > .column-1 {
     display: flex;
-    gap: 40px;
-    font-size: 13px;
-    align-items: center;
-    li {
-      a {
-        color: $grey-dark;
-        &.active {
-          font-weight: 600;
+    justify-content: center;
+    flex-direction: column;
+    > .menu-footer {
+      display: flex;
+      gap: 40px;
+      font-size: 13px;
+      align-items: center;
+      margin-bottom: 20px;
+      li {
+        a {
+          color: $grey-dark-2;
+          &.active {
+            font-weight: 600;
+          }
         }
       }
     }
+    > .network-socials {
+      display: flex;
+      gap: 15px;
+      > a {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        &.s-linkedin {
+          background: url(../images/social-linkedin.svg) center center no-repeat;
+        }
+        &.s-vimeo {
+          background: url(../images/social-vimeo.svg) center center no-repeat;
+        }
+        &.s-instagram {
+          background: url(../images/social-instagram.svg) center center
+            no-repeat;
+        }
+        &.s-twitter {
+          background: url(../images/social-twitter.svg) center center no-repeat;
+        }
+        &.s-facebook {
+          background: url(../images/social-facebook.svg) center center no-repeat;
+        }
+      }
+    }
+  }
+  .column-2 {
+    .logo-footer {
+      width: 55px;
+      height: 55px;
+      display: flex;
+      background: url(../images/logo.svg) center center no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+//Responsive
+@media (max-width: 834px) {
+  .history-home {
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    padding-left: 30px;
   }
 }

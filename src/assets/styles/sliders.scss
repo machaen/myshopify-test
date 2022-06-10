@@ -21,18 +21,22 @@
 .slider-one-home {
   position: relative;
   display: flex;
+  background: url(../images/main.jpg) no-repeat center center;
+  background-size: cover;
+  height: clamp(500px, 50vw, 685px);
+  width: 100%;
   .content {
     position: absolute;
     top: 225px;
     left: 173px;
-    width: 709px;
-    height: 257px;
+    width: min(50vw, 709px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     p {
       /* font-size: 3.7rem; */
-      font-size: 53px;
+      /* font-size: max(50, 53px); */
+      font-size: clamp(2rem, -0.875rem + 6.333vw, 53px);
       color: $white;
       margin-bottom: 35px;
       strong {
@@ -48,8 +52,8 @@
   align-items: center;
   > .our-rackets {
     flex-grow: 0;
-    width: min(50%, 530px);
-    min-height: 468px;
+    width: clamp(50vw, 33vw, 530px);
+    height: clamp(420px, 33vw, 468px);
     background: url(../images/our-rackets.jpg) no-repeat center center;
     background-size: cover;
     display: flex;
@@ -57,11 +61,11 @@
     flex-direction: column;
     > .description {
       width: min(100%, 260px);
-      margin-right: 50px;
-      margin-top: 55px;
-      margin-bottom: 30px;
+      margin-right: clamp(0px, 5vw, 50px);
+      margin-top: clamp(0px, 5vw, 55px);
+      margin-bottom: clamp(0px, 3vw, 30px);
       h2 {
-        font-size: 50px;
+        font-size: clamp(2rem, -0.875rem + 6.333vw, 50px);
         color: $white;
         font-weight: normal;
         line-height: 1.28;
@@ -146,11 +150,12 @@
     Styles for carousel rackets
   */
   > .carousel {
-    width: min(100%, 100% - 530px);
+    width: clamp(50vw, 100% - 530px, 100%);
     padding-left: 36px;
+    padding-top: 36px;
+    padding-bottom: 36px;
     .carousel-container-items {
-      min-height: 100%;
-      width: 288px;
+      width: clamp(200px, 33vw, 288px);
       border-right: 36px white solid;
       position: relative;
       .item-number {
@@ -169,14 +174,21 @@
         font-size: 17px;
       }
       img {
-        min-width: 288px;
+        width: clamp(200px, 33vw, 288px);
       }
     }
   }
 }
 
-/* .alice-carousel__stage {
-  > li {
-    margin-right: 30px;
+//Responsive
+@media (max-width: 834px) {
+  .container {
+    .slider-one-home {
+      height: 100vh;
+      .content {
+        top: 100px;
+        left: 30px;
+      }
+    }
   }
-} */
+}

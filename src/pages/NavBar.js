@@ -6,17 +6,17 @@ export const NavBar = () => {
   const [classHeader, setClassHeader] = useState("normal");
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY == 0) {
+      if (window.scrollY === 0) {
         setClassHeader("normal");
       } else {
-        if (classHeader != "fixed") {
+        if (classHeader !== "fixed") {
           setClassHeader("fixed");
         }
       }
     });
   }, []);
   return (
-    <header>
+    <header className="d-only-desktop">
       <nav className={"navbar " + classHeader}>
         <div className="navbar-nav">
           <Link className="link-logo" to="/">

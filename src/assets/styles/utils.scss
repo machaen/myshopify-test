@@ -1,3 +1,9 @@
 .font-weight-bold {
   font-weight: bold !important;
 }
+
+@media (max-width: 834px) {
+  .d-only-desktop {
+    display: none !important;
+  }
+}
