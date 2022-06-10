@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: min(100%, 1440px);
-    position: fixed;
+    position: absolute;
     .navbar-nav {
       display: flex;
       .link-logo {

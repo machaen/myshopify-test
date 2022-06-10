@@ -1,13 +1,12 @@
 import React, { forwardRef, useRef, useState } from "react";
 import racket from "../assets/images/group-10.png";
-import "../assets/styles/sliders.scss";
 import "../assets/styles/home.scss";
 import "../assets/styles/buttons.scss";
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
 import AliceCarousel from "react-alice-carousel";
+
 export const HomeScreen = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const syncActiveIndex = ({ item }) => setActiveIndex(item);
   const itemsLength = Array.from({ length: 5 });
   const items = itemsLength.map((item, index) => {
     return (
@@ -20,6 +19,8 @@ export const HomeScreen = () => {
       </div>
     );
   });
+
+  const syncActiveIndex = ({ item }) => setActiveIndex(item);
 
   const Carousel = forwardRef((props, ref) => {
     return (
@@ -74,7 +75,9 @@ export const HomeScreen = () => {
       <div className="shop-home">
         <div className="our-rackets">
           <div className="description">
-            <h2>Nuestras Raquetas</h2>
+            <h2>
+              Nuestras <strong>Raquetas</strong>
+            </h2>
             <p>
               Conoce nuestras raquetas y aprende a jugar Tennis cómo un
               profesional.

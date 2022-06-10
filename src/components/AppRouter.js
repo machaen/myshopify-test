@@ -7,7 +7,7 @@ import {
   Redirect,
 } from "react-router-dom";
 
-import { NavBar } from "../pages/NavBar";
+import { NavBar } from "./NavBar";
 import { HomeScreen } from "../pages/HomeScreen";
 
 export const AppRouter = () => {
