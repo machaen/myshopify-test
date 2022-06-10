@@ -1,5 +1,6 @@
 @import "./variables.scss";
 .history-home {
+  box-sizing: border-box;
   /*  box-shadow: inset 0px 1px 2px rgba(50, 50, 50, 0.75); */
   display: flex;
   width: 100%;
@@ -107,7 +108,6 @@ footer.footer {
     }
   }
 }
-
 //Responsive
 @media (max-width: 834px) {
   .history-home {
@@ -115,6 +115,17 @@ footer.footer {
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
-    padding-left: 30px;
+    padding: 30px;
+  }
+  footer.footer {
+    padding: 30px;
+    > .column-1 {
+      > .menu-footer {
+        padding-top: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+    }
   }
 }

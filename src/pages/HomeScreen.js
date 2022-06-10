@@ -59,7 +59,7 @@ export const HomeScreen = () => {
           <span>TENNIS</span>
         </div>
         <div>
-          <h2>Raquetas.Accesorios. Pelotas.</h2>
+          <h2>Raquetas. Accesorios. Pelotas.</h2>
           <p>
             Conoce nuestras raquetas y aprende a jugar Tennis como un
             profesional.

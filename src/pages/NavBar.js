@@ -17,6 +17,14 @@ export const NavBar = () => {
   }, []);
   return (
     <header className="d-only-desktop">
+      <div className="menu-mobile">
+        <nav>
+          <a href="">Inicio</a>
+          <a href="">Acerca de nosotros</a>
+          <a href="">Historia</a>
+          <a href="">Contacto</a>
+        </nav>
+      </div>
       <nav className={"navbar " + classHeader}>
         <div className="navbar-nav">
           <Link className="link-logo" to="/">
