@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c79ed221b2531e5b7d8bdaa19e7c9a72",
+    "revision": "f285d9da91a2d8795e4b7d60b3df9d8d",
     "url": "/myshopify-test/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/myshopify-test/static/css/2.981ae53e.chunk.css"
   },
   {
-    "revision": "a447ffc9a0b7b1424b36",
-    "url": "/myshopify-test/static/css/main.e4a678f9.chunk.css"
+    "revision": "8df9bbd7dca0288c1824",
+    "url": "/myshopify-test/static/css/main.e726cb6d.chunk.css"
   },
   {
     "revision": "4f827161dc3eb514f1f8",
@@ -20,16 +20,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/myshopify-test/static/js/2.bf5f05f4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a447ffc9a0b7b1424b36",
-    "url": "/myshopify-test/static/js/main.be5e2a9b.chunk.js"
+    "revision": "8df9bbd7dca0288c1824",
+    "url": "/myshopify-test/static/js/main.b0fc35cc.chunk.js"
   },
   {
     "revision": "14f0f86163c18fb3277a",
     "url": "/myshopify-test/static/js/runtime-main.f1a1a0a4.js"
-  },
-  {
-    "revision": "5f5a5c14df7549aab218c080d0e49b72",
-    "url": "/myshopify-test/static/media/group-10.5f5a5c14.png"
   },
   {
     "revision": "8dc42d2dd5674cddaf92cb059941ebb9",
@@ -50,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "96272d7350f7816a001e6a52276a6c9c",
     "url": "/myshopify-test/static/media/prefooter.96272d73.jpg"
+  },
+  {
+    "revision": "5f5a5c14df7549aab218c080d0e49b72",
+    "url": "/myshopify-test/static/media/racket-item.5f5a5c14.png"
   },
   {
     "revision": "0afb16304086e6821bdabe9801dd11d1",
