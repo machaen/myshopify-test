@@ -1,5 +1,5 @@
 import React, { forwardRef, useRef, useState } from "react";
-import racket from "../assets/images/group-10.png";
+import racket from "../assets/images/racket-item.png";
 import "../assets/styles/home.scss";
 import "../assets/styles/buttons.scss";
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
@@ -15,7 +15,7 @@ export const HomeScreen = () => {
         className="item carousel-container-items"
       >
         <span className="item-number">{++index}</span>
-        <img src={racket} alt="" />
+        <img src={racket} alt={"racket-" + index} />
       </div>
     );
   });
