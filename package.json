@@ -2,6 +2,7 @@
   "name": "hook-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://machaen.github.io/myshopify-test",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -16,6 +17,8 @@
     "swipe-js-iso": "^2.1.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,6 +43,7 @@
     "@testing-library/react-hooks": "^3.2.1",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
     "enzyme": "^3.11.0",
-    "enzyme-to-json": "^3.4.4"
+    "enzyme-to-json": "^3.4.4",
+    "gh-pages": "^4.0.0"
   }
 }

@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 
 export const NavBar = () => {
   const [classHeader, setClassHeader] = useState("normal");
+  const [menuMobile, setMenuMobile] = useState("");
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY === 0) {
@@ -15,9 +16,35 @@ export const NavBar = () => {
       }
     });
   }, []);
+
   return (
-    <header className="d-only-desktop">
-      <div className="menu-mobile">
+    <header>
+      <div className={"menu-mobile " + classHeader}>
+        <Link className="link-logo" to="/">
+          <img src={logo} alt="" />
+        </Link>
+        <div>
+          <a href="/">ES</a>
+          <a href="/">EN</a>
+          <span
+            className="hamburger-lines"
+            onClick={() => {
+              setMenuMobile("active");
+            }}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+      </div>
+      <div className={"navbar-mobile " + menuMobile}>
+        <span
+          onClick={() => {
+            setMenuMobile("");
+          }}
+          className="close"
+        ></span>
         <nav>
           <a href="">Inicio</a>
           <a href="">Acerca de nosotros</a>
@@ -25,7 +52,7 @@ export const NavBar = () => {
           <a href="">Contacto</a>
         </nav>
       </div>
-      <nav className={"navbar " + classHeader}>
+      <nav className={"navbar d-only-desktop " + classHeader}>
         <div className="navbar-nav">
           <Link className="link-logo" to="/">
             <img src={logo} alt="" />

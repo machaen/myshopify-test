@@ -47,7 +47,7 @@ export const HomeScreen = () => {
             Las mejores raquetas para jugar <strong>Tennis</strong>
           </p>
           <div>
-            <a href="#" className="btn btn-light font-weight-bold">
+            <a href="/" className="btn btn-light font-weight-bold">
               ACERCA DE NOSOTROS
             </a>
           </div>
@@ -66,7 +66,7 @@ export const HomeScreen = () => {
           </p>
         </div>
         <div>
-          <a href="#" className="btn btn-dark">
+          <a href="/" className="btn btn-dark">
             HISTORIA
           </a>
         </div>
@@ -113,30 +113,30 @@ export const HomeScreen = () => {
         <div className="column-1">
           <ul className="menu-footer">
             <li>
-              <a className="active" href="">
+              <a className="active" href="/">
                 Inicio
               </a>
             </li>
             <li>
-              <a href="#">Acerca de nosotros</a>
+              <a href="/">Acerca de nosotros</a>
             </li>
             <li>
-              <a href="#">Historia</a>
+              <a href="/">Historia</a>
             </li>
             <li>
-              <a href="#">Contacto</a>
+              <a href="/">Contacto</a>
             </li>
           </ul>
           <div className="network-socials">
-            <a href="#" target="_blank" className="s-linkedin"></a>
-            <a href="#" target="_blank" className="s-vimeo"></a>
-            <a href="#" target="_blank" className="s-instagram"></a>
-            <a href="#" target="_blank" className="s-twitter"></a>
-            <a href="#" target="_blank" className="s-facebook"></a>
+            <a href="/" target="_blank" className="s-linkedin"></a>
+            <a href="/" target="_blank" className="s-vimeo"></a>
+            <a href="/" target="_blank" className="s-instagram"></a>
+            <a href="/" target="_blank" className="s-twitter"></a>
+            <a href="/" target="_blank" className="s-facebook"></a>
           </div>
         </div>
         <div className="column-2">
-          <a className="logo-footer" href="#"></a>
+          <a className="logo-footer" href="/"></a>
         </div>
       </footer>
     </>
