@@ -3,6 +3,10 @@
 $arrow-color: #e74c3c;
 $arrow-size: 7px;
 $arrow-border: 2px;
+
+$arrow-transform-size: calc($arrow-size/2);
+$arrow-transform-border: calc($arrow-border/2);
+
 button,
 a {
   &.btn {
@@ -49,7 +53,7 @@ a {
       width: $arrow-size;
       height: $arrow-size;
       transform-origin: 50% 50%;
-      transform: translate(0, -($arrow-size / 2)) rotate(45deg);
+      transform: translate(0, -$arrow-transform-size) rotate(45deg);
       border-radius: 0 $arrow-size * 0.15 0 0;
     }
 
@@ -58,14 +62,14 @@ a {
       right: 30px;
       width: $arrow-size * 4;
       height: $arrow-border;
-      transform: translate(0, -($arrow-border / 2));
+      transform: translate(0, -$arrow-transform-border);
     }
     &:hover {
       &:before {
-        transform: translate(0.5em, -($arrow-size / 2)) rotate(45deg);
+        transform: translate(0.5em, -$arrow-transform-size) rotate(45deg);
       }
       &:after {
-        transform: translate(0.5em, -($arrow-border / 2));
+        transform: translate(0.5em, -$arrow-transform-border);
       }
     }
   }

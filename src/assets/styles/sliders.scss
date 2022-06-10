@@ -188,8 +188,9 @@
     .slider-one-home {
       height: 100vh;
       .content {
-        top: 100px;
+        top: 50%;
         left: 30px;
+        margin-top: -100px;
       }
     }
     .shop-home {
@@ -212,9 +213,12 @@
         width: 100%;
         height: auto;
         > .description {
-          padding: 30px;
+          padding: 40px 30px;
           margin: 0px;
           width: 100%;
+          h2 {
+            max-width: 200px;
+          }
         }
         > .carousel-options {
           display: none;
