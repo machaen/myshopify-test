@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b4295721db3b26a4aeb01083aede2aae",
+    "revision": "57992e381150dc433ee14b3fe92097eb",
     "url": "/myshopify-test/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/myshopify-test/static/css/2.981ae53e.chunk.css"
   },
   {
-    "revision": "cfc5d7d310d4f1c093b8",
-    "url": "/myshopify-test/static/css/main.a7f03746.chunk.css"
+    "revision": "7374152b0694456e43fa",
+    "url": "/myshopify-test/static/css/main.417bd105.chunk.css"
   },
   {
     "revision": "17a3c7da94e10e047f6a",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/myshopify-test/static/js/2.078bf379.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cfc5d7d310d4f1c093b8",
+    "revision": "7374152b0694456e43fa",
     "url": "/myshopify-test/static/js/main.65f501b2.chunk.js"
   },
   {
