@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/myshopify-test/static/css/main.e4a678f9.chunk.css",
-    "main.js": "/myshopify-test/static/js/main.be5e2a9b.chunk.js",
-    "main.js.map": "/myshopify-test/static/js/main.be5e2a9b.chunk.js.map",
+    "main.css": "/myshopify-test/static/css/main.e726cb6d.chunk.css",
+    "main.js": "/myshopify-test/static/js/main.b0fc35cc.chunk.js",
+    "main.js.map": "/myshopify-test/static/js/main.b0fc35cc.chunk.js.map",
     "runtime-main.js": "/myshopify-test/static/js/runtime-main.f1a1a0a4.js",
     "runtime-main.js.map": "/myshopify-test/static/js/runtime-main.f1a1a0a4.js.map",
     "static/css/2.981ae53e.chunk.css": "/myshopify-test/static/css/2.981ae53e.chunk.css",
     "static/js/2.bf5f05f4.chunk.js": "/myshopify-test/static/js/2.bf5f05f4.chunk.js",
     "static/js/2.bf5f05f4.chunk.js.map": "/myshopify-test/static/js/2.bf5f05f4.chunk.js.map",
     "index.html": "/myshopify-test/index.html",
-    "precache-manifest.9a4aae8144b4a689e77ce34253eb5f15.js": "/myshopify-test/precache-manifest.9a4aae8144b4a689e77ce34253eb5f15.js",
+    "precache-manifest.b2a6079ad6b28ea950628faea1a6f461.js": "/myshopify-test/precache-manifest.b2a6079ad6b28ea950628faea1a6f461.js",
     "service-worker.js": "/myshopify-test/service-worker.js",
     "static/css/2.981ae53e.chunk.css.map": "/myshopify-test/static/css/2.981ae53e.chunk.css.map",
-    "static/css/main.e4a678f9.chunk.css.map": "/myshopify-test/static/css/main.e4a678f9.chunk.css.map",
+    "static/css/main.e726cb6d.chunk.css.map": "/myshopify-test/static/css/main.e726cb6d.chunk.css.map",
     "static/js/2.bf5f05f4.chunk.js.LICENSE.txt": "/myshopify-test/static/js/2.bf5f05f4.chunk.js.LICENSE.txt",
-    "static/media/group-10.png": "/myshopify-test/static/media/group-10.5f5a5c14.png",
     "static/media/main.scss": "/myshopify-test/static/media/helveticaneue.8dc42d2d.woff2",
-    "static/media/home.scss": "/myshopify-test/static/media/social-vimeo.1a680050.svg"
+    "static/media/home.scss": "/myshopify-test/static/media/social-vimeo.1a680050.svg",
+    "static/media/racket-item.png": "/myshopify-test/static/media/racket-item.5f5a5c14.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f1a1a0a4.js",
     "static/css/2.981ae53e.chunk.css",
     "static/js/2.bf5f05f4.chunk.js",
-    "static/css/main.e4a678f9.chunk.css",
-    "static/js/main.be5e2a9b.chunk.js"
+    "static/css/main.e726cb6d.chunk.css",
+    "static/js/main.b0fc35cc.chunk.js"
   ]
 }
